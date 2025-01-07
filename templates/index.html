@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervačný systém</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Rezervačný systém</h1>
+
+    <div class="form">
+        <label for="datum">Dátum:</label>
+        <input type="text" id="datum" placeholder="DD.MM.RRRR">
+
+        <label for="cas">Čas:</label>
+        <input type="text" id="cas" placeholder="HH:MM">
+
+        <label for="miesto">Miesto:</label>
+        <input type="text" id="miesto">
+
+        <label for="popis">Popis:</label>
+        <input type="text" id="popis">
+
+        <button id="pridat">Pridať rezerváciu</button>
+    </div>
+
+    <div class="rezervacie">
+        <h2>Rezervácie</h2>
+        <div class="scroll-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dátum</th>
+                        <th>Čas</th>
+                        <th>Miesto</th>
+                        <th>Popis</th>
+                    </tr>
+                </thead>
+                <tbody id="rezervacie-list"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Rezervačný systém | Vytvorené pre radosť 😊</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
